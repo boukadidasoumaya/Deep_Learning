@@ -214,8 +214,9 @@ La date et l'heure rendent chaque `run_name` unique, évitent d'écraser les log
 ### 5.d Visualisation TensorBoard
 
 
-Le niveau de smoothing **0.6** : il rend la tendance décroissante de `Loss/train_step` visible sans masquer les variations
-importantes. À `0.0` ou `0.3`, la courbe reste trop bruitée, tandis qu'à `0.8`, le lissage masque davantage les changements rapides.
+
+Le niveau de smoothing entre **0.6** et **0.8** est recommandé : il rend la tendance décroissante de `Loss/train_step` visible sans masquer les variations
+importantes. Inférieur à `0.6`, la courbe reste trop bruitée, et supérieur à `0.8`, le lissage masque davantage les changements rapides.
 
 `Loss/train_step` est plus bruitée que `Loss/train` parce qu'elle est calculée
 sur un seul batch,par contre `Loss/train` est une moyenne sur toute l'époque et ses fluctuations aléatoires sont donc
@@ -224,23 +225,19 @@ fortement réduites.
 ### 5.e Mini-sweep d'hyperparamètres et diagnostic du sur-apprentissage
 **Accuracy**
 ![](ex5/courbes.png)
-Note : la courbe `runs1` correspond à `lr=1e-2, batch_size=32`,
-`runs2` à `lr=1e-3, batch_size=32` et `runs3` à `lr=1e-1, batch_size=128`.
 **Loss Train courbe**
-![](ex5/lossTrain.png)
+![](ex5/lossTrain.png.png)
 **Loss Validation courbe**
 ![](ex5/lossVal.png)
 | Run | Learning rate | Batch size | Meilleure accuracy validation |
 |-----|---------------|------------|-------------------------------|
-| 1   | `1e-2`        | `32`       |  `0,3956`                 |
-| 2   | `1e-3`        | `32`       | `0,4623`                       |
-| 3   | `1e-1`        | `128`      |  `0,1608`                 |
+| 1   | `1e-2`        | `32`       | `0,384`                 |
+| 2   | `1e-3`        | `32`       | `0,515`                 |
+| 3   | `1e-1`        | `128`      | `0,096`                 |
 
-La meilleure configuration est le **Run 2** (`lr=1e-3, batch_size=32`), avec
-une accuracy de validation maximale de `0,4623`.
+La meilleure configuration est le **Run 2** (`lr=1e-3, batch_size=32`), avec une accuracy de validation maximale de `0,5150`, soit `51,50 %`. Le Run 1 atteint son maximum à l'époque 7, tandis que le Run 3 reste proche de la prédiction aléatoire (`10 %`) et ses pertes deviennent `NaN`.
 
-Les courbes 1 et 2 diminuent progressivement leur `Loss/train` et leur `Loss/val`. Le Run 2 obtient la meilleure accuracy de validation (`0,4623`) et la perte de validation la plus basse. 
-Pour la courbe 3, les deux pertes restent élevées et presque constantes, ce qui indique que le taux d'apprentissage `1e-1` est trop grand pour apprendre correctement.
+Pour le Run 2, `Loss/train` et `Loss/val` diminuent régulièrement, ce qui indique un apprentissage stable. Pour le Run 1, `Loss/train` diminue légèrement mais `Loss/val` reste élevée et augmente en fin d'entraînement : le modèle généralise moins bien. Pour le Run 3, les pertes deviennent `NaN`, ce qui indique une divergence due au taux d'apprentissage trop élevé.
 
 On détecte un sur-apprentissage lorsque la `Loss/train` continue de diminuer, alors que la `Loss/val` cesse de diminuer puis augmente. 
 A ce moment la le modèle devient meilleur sur les exemples d'entraînement, mais généralise moins bien sur les exemples de validation.
