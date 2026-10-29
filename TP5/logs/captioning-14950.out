@@ -1,0 +1,254 @@
+Thu Oct 29 10:33:01 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 595.84                 Driver Version: 595.84         CUDA Version: 13.2     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA L4                      Off |   00000000:06:10.0 Off |                    0 |
+| N/A   34C    P8             16W /   72W |       0MiB /  23034MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+Début de l'entraînement
+Computing vocabulary...
+Number of words: 23461
+Vocabulary size: 20226
+Device : cuda
+Nombre de batchs Train : 795
+Nombre de batchs Test : 199
+Epoch [1/15] Batch [100/795] Loss: 6.5092
+Epoch [1/15] Batch [200/795] Loss: 6.0955
+Epoch [1/15] Batch [300/795] Loss: 5.6969
+Epoch [1/15] Batch [400/795] Loss: 5.1687
+Epoch [1/15] Batch [500/795] Loss: 5.2229
+Epoch [1/15] Batch [600/795] Loss: 5.0273
+Epoch [1/15] Batch [700/795] Loss: 5.1496
+
+Epoch 1/15
+Train Loss : 5.6075
+Val Loss   : 4.8440
+Prediction : man men are playing are on the with with other are in in in the the in on on
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.001000
+
+Epoch [2/15] Batch [100/795] Loss: 4.7533
+Epoch [2/15] Batch [200/795] Loss: 4.5352
+Epoch [2/15] Batch [300/795] Loss: 4.4288
+Epoch [2/15] Batch [400/795] Loss: 4.4432
+Epoch [2/15] Batch [500/795] Loss: 4.1647
+Epoch [2/15] Batch [600/795] Loss: 4.5227
+Epoch [2/15] Batch [700/795] Loss: 4.3347
+
+Epoch 2/15
+Train Loss : 4.4708
+Val Loss   : 4.4616
+Prediction : two men are standing in on the pool with other are in man in other the in on on
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.001000
+
+Epoch [3/15] Batch [100/795] Loss: 3.9815
+Epoch [3/15] Batch [200/795] Loss: 3.9767
+Epoch [3/15] Batch [300/795] Loss: 3.9144
+Epoch [3/15] Batch [400/795] Loss: 3.9886
+Epoch [3/15] Batch [500/795] Loss: 3.9388
+Epoch [3/15] Batch [600/795] Loss: 3.7114
+Epoch [3/15] Batch [700/795] Loss: 4.0720
+
+Epoch 3/15
+Train Loss : 4.0031
+Val Loss   : 4.3322
+Prediction : two men are in underwater in the pool with other are in is in other is in in in
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.001000
+
+Epoch [4/15] Batch [100/795] Loss: 3.6807
+Epoch [4/15] Batch [200/795] Loss: 3.7912
+Epoch [4/15] Batch [300/795] Loss: 3.3984
+Epoch [4/15] Batch [400/795] Loss: 3.7489
+Epoch [4/15] Batch [500/795] Loss: 3.5659
+Epoch [4/15] Batch [600/795] Loss: 3.5300
+Epoch [4/15] Batch [700/795] Loss: 3.7108
+
+Epoch 4/15
+Train Loss : 3.6376
+Val Loss   : 4.2825
+Prediction : man men are playing underwater underwater pool pool with other are in in in other them in in be
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.001000
+
+Epoch [5/15] Batch [100/795] Loss: 3.1784
+Epoch [5/15] Batch [200/795] Loss: 3.4257
+Epoch [5/15] Batch [300/795] Loss: 3.4762
+Epoch [5/15] Batch [400/795] Loss: 3.1211
+Epoch [5/15] Batch [500/795] Loss: 3.4957
+Epoch [5/15] Batch [600/795] Loss: 3.3276
+Epoch [5/15] Batch [700/795] Loss: 3.2179
+
+Epoch 5/15
+Train Loss : 3.3001
+Val Loss   : 4.3171
+Prediction : scuba men are in underwater underwater pool pool with other are in in in other the in in be
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.001000
+
+Epoch [6/15] Batch [100/795] Loss: 2.8745
+Epoch [6/15] Batch [200/795] Loss: 2.8654
+Epoch [6/15] Batch [300/795] Loss: 3.0199
+Epoch [6/15] Batch [400/795] Loss: 2.7004
+Epoch [6/15] Batch [500/795] Loss: 2.7547
+Epoch [6/15] Batch [600/795] Loss: 2.7380
+Epoch [6/15] Batch [700/795] Loss: 2.9829
+
+Epoch 6/15
+Train Loss : 2.8178
+Val Loss   : 4.3141
+Prediction : two men are in underwater underwater pool pool with other are in in in other in in in be
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.000100
+
+Epoch [7/15] Batch [100/795] Loss: 2.6703
+Epoch [7/15] Batch [200/795] Loss: 2.5513
+Epoch [7/15] Batch [300/795] Loss: 2.9971
+Epoch [7/15] Batch [400/795] Loss: 2.8335
+Epoch [7/15] Batch [500/795] Loss: 2.6992
+Epoch [7/15] Batch [600/795] Loss: 2.9002
+Epoch [7/15] Batch [700/795] Loss: 2.8573
+
+Epoch 7/15
+Train Loss : 2.7296
+Val Loss   : 4.3243
+Prediction : two men are in underwater underwater pool pool with other are in in in other in in in be
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.000100
+
+Epoch [8/15] Batch [100/795] Loss: 2.7290
+Epoch [8/15] Batch [200/795] Loss: 2.5488
+Epoch [8/15] Batch [300/795] Loss: 2.8035
+Epoch [8/15] Batch [400/795] Loss: 2.5996
+Epoch [8/15] Batch [500/795] Loss: 2.6163
+Epoch [8/15] Batch [600/795] Loss: 2.6674
+Epoch [8/15] Batch [700/795] Loss: 2.8182
+
+Epoch 8/15
+Train Loss : 2.6720
+Val Loss   : 4.3411
+Prediction : two men are in underwater underwater pool pool with with are in in in other in in in be
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.000100
+
+Epoch [9/15] Batch [100/795] Loss: 2.6459
+Epoch [9/15] Batch [200/795] Loss: 2.5398
+Epoch [9/15] Batch [300/795] Loss: 2.5151
+Epoch [9/15] Batch [400/795] Loss: 2.6323
+Epoch [9/15] Batch [500/795] Loss: 2.6301
+Epoch [9/15] Batch [600/795] Loss: 2.6338
+Epoch [9/15] Batch [700/795] Loss: 2.6013
+
+Epoch 9/15
+Train Loss : 2.6212
+Val Loss   : 4.3522
+Prediction : two men are in underwater underwater pool pool with with are in in in other in in in be
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.000100
+
+Epoch [10/15] Batch [100/795] Loss: 2.5934
+Epoch [10/15] Batch [200/795] Loss: 2.9037
+Epoch [10/15] Batch [300/795] Loss: 2.5527
+Epoch [10/15] Batch [400/795] Loss: 2.6794
+Epoch [10/15] Batch [500/795] Loss: 2.5548
+Epoch [10/15] Batch [600/795] Loss: 2.5575
+Epoch [10/15] Batch [700/795] Loss: 2.5734
+
+Epoch 10/15
+Train Loss : 2.5731
+Val Loss   : 4.3698
+Prediction : two men are in in in pool pool with with are in in in other in in in be
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.000100
+
+Epoch [11/15] Batch [100/795] Loss: 2.6822
+Epoch [11/15] Batch [200/795] Loss: 2.3188
+Epoch [11/15] Batch [300/795] Loss: 2.4347
+Epoch [11/15] Batch [400/795] Loss: 2.4804
+Epoch [11/15] Batch [500/795] Loss: 2.5930
+Epoch [11/15] Batch [600/795] Loss: 2.4070
+Epoch [11/15] Batch [700/795] Loss: 2.5530
+
+Epoch 11/15
+Train Loss : 2.5075
+Val Loss   : 4.3766
+Prediction : two men are in in in pool pool with with are in in in other in in in be
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.000010
+
+Epoch [12/15] Batch [100/795] Loss: 2.4034
+Epoch [12/15] Batch [200/795] Loss: 2.6527
+Epoch [12/15] Batch [300/795] Loss: 2.6697
+Epoch [12/15] Batch [400/795] Loss: 2.3238
+Epoch [12/15] Batch [500/795] Loss: 2.6034
+Epoch [12/15] Batch [600/795] Loss: 2.4739
+Epoch [12/15] Batch [700/795] Loss: 2.4753
+
+Epoch 12/15
+Train Loss : 2.5006
+Val Loss   : 4.3797
+Prediction : two men are in in in pool pool with with are in in in other in in in be
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.000010
+
+Epoch [13/15] Batch [100/795] Loss: 2.5948
+Epoch [13/15] Batch [200/795] Loss: 2.2011
+Epoch [13/15] Batch [300/795] Loss: 2.4006
+Epoch [13/15] Batch [400/795] Loss: 2.4725
+Epoch [13/15] Batch [500/795] Loss: 2.2759
+Epoch [13/15] Batch [600/795] Loss: 2.4249
+Epoch [13/15] Batch [700/795] Loss: 2.4662
+
+Epoch 13/15
+Train Loss : 2.4955
+Val Loss   : 4.3825
+Prediction : two men are in in in pool pool with with are in in in other in in in be
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.000010
+
+Epoch [14/15] Batch [100/795] Loss: 2.4594
+Epoch [14/15] Batch [200/795] Loss: 2.6767
+Epoch [14/15] Batch [300/795] Loss: 2.4347
+Epoch [14/15] Batch [400/795] Loss: 2.5130
+Epoch [14/15] Batch [500/795] Loss: 2.4784
+Epoch [14/15] Batch [600/795] Loss: 2.4672
+Epoch [14/15] Batch [700/795] Loss: 2.6234
+
+Epoch 14/15
+Train Loss : 2.4905
+Val Loss   : 4.3846
+Prediction : two men are in in in pool pool with with are in in in other in in in be
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.000010
+
+Epoch [15/15] Batch [100/795] Loss: 2.6007
+Epoch [15/15] Batch [200/795] Loss: 2.6793
+Epoch [15/15] Batch [300/795] Loss: 2.4571
+Epoch [15/15] Batch [400/795] Loss: 2.5090
+Epoch [15/15] Batch [500/795] Loss: 2.3049
+Epoch [15/15] Batch [600/795] Loss: 2.5293
+Epoch [15/15] Batch [700/795] Loss: 2.2658
+
+Epoch 15/15
+Train Loss : 2.4851
+Val Loss   : 4.3869
+Prediction : two men are in in in pool pool with with are in in in other in in in be
+Target     : four people are scuba diving in swimming pool two girls one bald man the third person you can only
+LR         : 0.000010
+
+Entraînement terminé !
+Fin de l'entraînement
