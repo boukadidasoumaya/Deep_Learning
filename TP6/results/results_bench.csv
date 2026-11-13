@@ -1,0 +1,23 @@
+tag,materiel,arch,precision,channels_last,compile,donnees,workers,pin_memory,batch,img_s,img_s_min,img_s_max,pic_memoire_go,compilation_s,epoque_s
+ref-synth,NVIDIA H100 NVL MIG 1g.12gb,resnet50,fp32,False,False,synthetic,,,64,108.2,108.2,108.2,5.95,nan,nan
+ref-raw,NVIDIA H100 NVL MIG 1g.12gb,resnet50,fp32,False,False,raw,3,True,64,107.9,107.8,108.0,5.95,nan,119.5
+raw-w0,NVIDIA H100 NVL MIG 1g.12gb,resnet50,fp32,False,False,raw,0,True,64,82.4,82.3,82.5,5.95,nan,nan
+raw-w1,NVIDIA H100 NVL MIG 1g.12gb,resnet50,fp32,False,False,raw,1,True,64,108.1,108.1,108.2,5.95,nan,nan
+raw-w2,NVIDIA H100 NVL MIG 1g.12gb,resnet50,fp32,False,False,raw,2,True,64,108.0,108.0,108.0,5.95,nan,nan
+raw-w3,NVIDIA H100 NVL MIG 1g.12gb,resnet50,fp32,False,False,raw,3,True,64,108.0,108.0,108.0,5.95,nan,nan
+raw-w3-nopin,NVIDIA H100 NVL MIG 1g.12gb,resnet50,fp32,False,False,raw,3,False,64,106.1,106.1,106.1,5.95,nan,nan
+small-w0,NVIDIA H100 NVL MIG 1g.12gb,resnet50,fp32,False,False,small,0,True,64,92.0,91.9,92.0,5.95,nan,nan
+small-w3,NVIDIA H100 NVL MIG 1g.12gb,resnet50,fp32,False,False,small,3,True,64,108.0,108.0,108.0,5.95,nan,nan
+fp32-synthetic,NVIDIA H100 NVL MIG 1g.12gb,resnet50,fp32,False,False,synthetic,,,64,108.2,108.0,108.3,5.95,nan,nan
+tf32-synthetic,NVIDIA H100 NVL MIG 1g.12gb,resnet50,tf32,False,False,synthetic,,,64,259.2,259.2,259.2,5.93,nan,nan
+bf16-synthetic,NVIDIA H100 NVL MIG 1g.12gb,resnet50,bf16,False,False,synthetic,,,64,382.4,382.3,382.4,3.29,nan,nan
+bf16-cl-synthetic,NVIDIA H100 NVL MIG 1g.12gb,resnet50,bf16,True,False,synthetic,,,64,526.5,526.2,526.5,3.29,nan,nan
+bf16-cl-compile-synthetic,NVIDIA H100 NVL MIG 1g.12gb,resnet50,bf16,True,True,synthetic,,,64,669.7,669.0,669.8,3.08,66.4,nan
+bf16-cl-raw-w1,NVIDIA H100 NVL MIG 1g.12gb,resnet50,bf16,True,False,raw,1,True,64,214.4,177.7,302.4,3.29,nan,nan
+bf16-cl-compile-raw-w1,NVIDIA H100 NVL MIG 1g.12gb,resnet50,bf16,True,True,raw,1,True,64,204.6,181.9,274.5,3.07,8.9,nan
+bf16-cl-raw-w3,NVIDIA H100 NVL MIG 1g.12gb,resnet50,bf16,True,False,raw,3,True,64,522.1,521.8,522.6,3.29,nan,nan
+bf16-cl-compile-raw-w3,NVIDIA H100 NVL MIG 1g.12gb,resnet50,bf16,True,True,raw,3,True,64,669.7,666.4,670.5,3.07,4.4,nan
+bf16-cl-small-w1,NVIDIA H100 NVL MIG 1g.12gb,resnet50,bf16,True,False,small,1,True,64,322.1,319.3,340.0,3.29,nan,nan
+bf16-cl-compile-small-w1,NVIDIA H100 NVL MIG 1g.12gb,resnet50,bf16,True,True,small,1,True,64,473.8,385.8,492.2,3.07,7.2,nan
+bf16-cl-small-w3,NVIDIA H100 NVL MIG 1g.12gb,resnet50,bf16,True,False,small,3,True,64,522.0,521.6,522.5,3.29,nan,nan
+bf16-cl-compile-small-w3,NVIDIA H100 NVL MIG 1g.12gb,resnet50,bf16,True,True,small,3,True,64,670.5,670.0,670.8,3.07,6.6,nan

@@ -1,0 +1,8 @@
+tag,variante,threads,calibration,taille_mo,latence_ms,premier_appel_s,top1_val,accord_fp32,ecart_logits,n_val
+calib200,fp32-eager,4,,94.3,49.09,0.1,0.994,1.0,0.0,500
+calib200,fp32,4,,94.3,21.05,27.6,0.994,1.0,0.0,500
+calib200,bf16,4,,47.2,15.47,8.1,0.994,1.0,0.02,500
+calib200,int8,4,200,23.9,10.4,3.6,0.994,1.0,0.0923,500
+calib10,int8,4,10,23.9,9.07,4.8,0.994,1.0,0.0929,500
+threads1,fp32,1,,94.3,71.89,6.7,0.99,1.0,0.0,100
+threads1,int8,1,200,23.9,27.68,3.8,0.99,1.0,0.0969,100
